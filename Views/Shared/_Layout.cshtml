@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="/css/site.css" rel="site" />
+</head>
+<body>
+    <header>
+        <h1>Welcome to my page</h1>
+        <p>My name is Tyler King, welcome to my lab3 layout.</p>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the song!", "SongForm", "Home")
+        @Html.ActionLink("Persons", "CreatePerson", "Home")
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Layouts allow us to reuse portions of view content instead of implementing the same thing on multiple web pages.</p>
+        <p>This layout file exists in the shared directory under views because its going to be implemented multiple times.</p>
+        <p>CSS is the styling of a website and its file is located in the wwwroot under the css folder as its the styling for th whole website.</p>
+    </footer>
+</body>
+</html>
